@@ -1,0 +1,31 @@
+{
+  "name": "hola-mundo-devops-ci-cd",
+  "version": "1.0.0",
+  "description": "Practica Final DevOps CI/CD con GitHub Actions, Docker y Render",
+  "main": "src/index.js",
+
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "jest --runInBand --detectOpenHandles",
+    "test:watch": "jest --watch",
+    "health": "node -e \"fetch('http://localhost:3000/health').then(r=>r.text()).then(console.log)\""
+  },
+  "keywords": [
+    "devops",
+    "ci-cd",
+    "docker",
+    "github-actions",
+    "render"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
